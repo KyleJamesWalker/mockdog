@@ -1,4 +1,3 @@
-from __future__ import print_function
 
 import logging
 import socket
@@ -56,4 +55,4 @@ if __name__ == "__main__":
     sock = bind_udp()
     while True:
         data, addr = sock.recvfrom(1024)
-        process(data)
+        process(data.decode("utf-8"))
