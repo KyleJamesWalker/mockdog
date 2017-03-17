@@ -10,7 +10,7 @@ logging.basicConfig(format='%(asctime)s %(message)s',
 logger = logging.getLogger(__name__)
 
 msg_format = re.compile(
-    r"(?P<name>.*?):(?P<value>.*?)\|(?P<type>[a-z])\|#(?P<tags>.*)"
+    r"(?P<name>.*?):(?P<value>.*?)\|(?P<type>[a-z]*)\|#(?P<tags>.*)"
 )
 
 '''
